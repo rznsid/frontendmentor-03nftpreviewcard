@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+:root {
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg-color: hsl(216, 50%, 16%);
+  --main-line-color: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  font-size: 18px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  font-family: "Outfit", sans-serif;
+  color: var(--white);
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+.modal {
+  background-color: var(--card-bg-color);
+  border-radius: 10px;
+  width: 280px;
+  margin: 15% auto 0;
+  padding: 20px;
+  box-shadow: -2px 10px 0px 20px rgba(0, 0, 0, 0.06),
+    -2px 10px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.modal img {
+  border-radius: 5px;
+}
+
+.modal h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0.8rem 0;
+}
+
+.modal p {
+  color: var(--soft-blue);
+  font-size: 0.8rem;
+  font-weight: 300;
+  margin: 0 0 0.8rem;
+}
+
+.modal__data {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.6rem;
+}
+
+.modal__data img {
+  height: 0.6rem;
+  margin-right: 5px;
+}
+
+.modal__balance {
+  color: var(--cyan);
+  font-weight: 600;
+  display: flex;
+  align-items: flex-start;
+}
+
+.modal__time {
+  color: var(--soft-blue);
+  font-weight: 400;
+  display: flex;
+}
+
+.modal__line {
+  background-color: var(--soft-blue);
+  height: 1px;
+  margin: 15px 0 10px;
+  opacity: 0.2;
+}
+
+.modal__creator {
+  color: var(--soft-blue);
+  font-size: 0.6rem;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+
+.modal__creator img {
+  height: 20px;
+  border: 1px var(--white) solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.modal__creator-name {
+  color: var(--white);
+  font-weight: 600;
+}
