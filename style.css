@@ -46,8 +46,12 @@ svg {
     -2px 10px 0px 5px rgba(0, 0, 0, 0.1);
 }
 
-.modal img {
+.modal__img {
   border-radius: 5px;
+  display: block;
+  height: 100px;
+  background: url("images/image-equilibrium.jpg") no-repeat center top;
+  background-size: cover;
 }
 
 .modal h2 {
