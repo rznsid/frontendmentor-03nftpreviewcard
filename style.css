@@ -49,15 +49,34 @@ svg {
 .modal__img {
   border-radius: 5px;
   display: block;
-  height: 100px;
+  height: 250px;
   background: url("images/image-equilibrium.jpg") no-repeat center top;
   background-size: cover;
 }
 
-.modal h2 {
+.modal__img:hover {
+  background: linear-gradient(hsl(178, 100%, 50%, 0.625), hsl(178, 100%, 50%, 0.625)), url("images/image-equilibrium.jpg") no-repeat center top;
+  background-size: cover;
+}
+
+.modal__hero-icon {
+  margin: auto;
+  padding: 40%;
+  opacity: 0;
+}
+
+.modal__hero-icon:hover {
+  opacity: 1;
+}
+
+.modal__title {
   font-size: 1rem;
   font-weight: 600;
   margin: 0.8rem 0;
+}
+
+.modal__title:hover {
+  color: var(--cyan);
 }
 
 .modal p {
@@ -87,7 +106,7 @@ svg {
 
 .modal__time {
   color: var(--soft-blue);
-  font-weight: 400;
+  font-weight: 600;
   display: flex;
 }
 
@@ -116,4 +135,8 @@ svg {
 .modal__creator-name {
   color: var(--white);
   font-weight: 600;
+}
+
+.modal__creator-name:hover {
+  color: var(--cyan);
 }
